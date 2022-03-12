@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  tomcat:
+    container_name: tomcat
+    image: tomcat
+    ports:
+      - "8080:8080"
+    volumes:
+      - tomcat:/home/doc/tomcat
+
+volumes:
+  tomcat:
